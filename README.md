@@ -1,11 +1,11 @@
 # BandBoek README
 
-Bandboek project that serves as a musician and band matchmaking platform. It allows users to create accounts, post advertisements, and connect with potential collaborators for music projects.
+Bandboek is a student project that serves as a musician and band matchmaking platform. It allows users to create accounts, post advertisements, and connect with potential collaborators for music projects.
 
 ## Getting Started
 
-1. Clone the BandBoek repository and navigate to the project folder.
-2. Set up a web server environment and ensure PHP is installed.
+1. Clone the repository.
+2. Set up a web server environment.
 4. Import the provided SQL script into your MySQL database to create tables and insert sample data.
 5. Update database connection settings in the PHP files to match your local setup.
 6. Access the BandBoek application through your local web server's URL.
