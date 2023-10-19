@@ -19,7 +19,7 @@ if (!isset($_SESSION['ingelogd'])) {
             $advertenties = $bandQuery->fetchAll(PDO::FETCH_ASSOC);
             foreach ($advertenties as $advertentie) {
             ?>
-                <div class="card">
+                <div class="card mt-2">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $advertentie['titel']; ?></h5>
                         <p class="card-text"><?php echo $advertentie['advertentieText']; ?></p>
