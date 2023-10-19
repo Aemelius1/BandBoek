@@ -79,7 +79,8 @@ CREATE TABLE advertentie(
         "Overig"
     ) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    isBand BOOLEAN NOT NULL
+    isBand BOOLEAN NOT NULL,
+    creationDate DATETIME NOT NULL
 ); 
 
 INSERT INTO advertentie(
@@ -89,7 +90,8 @@ INSERT INTO advertentie(
     provincie,
     muzikant,
     email,
-    isBand
+    isBand,
+    creationDate
 )
 VALUES(
     "Beginnende rockband zoekt drummer",
@@ -98,7 +100,8 @@ VALUES(
     "Gelderland",
     "Drummer",
     "peter@mail.com",
-    true
+    true,
+    "2023-10-14 12:00:00"
 ),(
     "Ervaren jazz band zoekt bassist",
     "Wij zijn op zoek naar een ervaren bassist om lekker mee te jammen",
@@ -106,7 +109,8 @@ VALUES(
     "Overijssel",
     "Bassist",
     "tim@mail.com",
-    true
+    true,
+     "2023-10-15 12:00:00"
 ),(
     "Pop coverband zoekt pianist",
     "Wij treden regelmatig op en zijn op zoek naar iemand die snel onze pianist kan vervangen",
@@ -114,7 +118,8 @@ VALUES(
     "Noord-Holland",
     "Toetsenist",
     "julia@mail.com",
-    true
+    true,
+    "2023-10-16 12:00:00"
 ),(
     "Violist is op zoek naar mensen om country muziek mee te spelen",
     "Ik speel al langere tijd viool, maar ik heb tot nu toe alleen klasssieke stukken gespeeld, en ik zou graag een keer country muziek willen spelen",
@@ -122,7 +127,8 @@ VALUES(
     "Zeeland",
     "Strijker",
     "frank@mail.com",
-    false
+    false,
+    "2023-10-17 12:00:00"
 ),(
     "R&B zanger op zoek naar band",
     "Ik zit al langere tijd zangles, en ik zou graag de grote stap willen maken om een keer echt op te treden. Ik zing voornamelijk R&B",
@@ -130,7 +136,8 @@ VALUES(
     "Drenthe",
     "Vocalist",
     "femke@mail.com",
-    false
+    false,
+    "2023-10-18 12:00:00"
 ),(
     "Metal gitarist op zoek naar band",
     "Ik heb al wat ervaring met het spelen in bandjes, maar ik heb voornamelijk in rock bands gespeeld. Ik zou graag in een echte metal band willen spelen",
@@ -138,5 +145,6 @@ VALUES(
     "Groningen",
     "Gitarist",
     "maarten@mail.com",
-    false
+    false,
+    "2023-10-19 12:00:00"
 );

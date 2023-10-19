@@ -19,12 +19,13 @@ if ($_POST) {
     $muzikant = $_POST['muzikant'];
     $email = $_SESSION["ingelogd"];
     $isBand = $_POST['isBand'];
+    $creationDate = date('Y-m-d H:i:s');
 
     $sql = "INSERT INTO advertentie 
-        (titel, advertentieText, genre, provincie, muzikant, email, isBand)
-        VALUES(?,?,?,?,?,?,?)";
+        (titel, advertentieText, genre, provincie, muzikant, email, isBand, creationDate)
+        VALUES(?,?,?,?,?,?,?,?)";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$titel, $advertentieText, $genre, $provincie, $muzikant, $email, $isBand]);
+    $stmt->execute([$titel, $advertentieText, $genre, $provincie, $muzikant, $email, $isBand, $creationDate]);
 }
 ?>
 

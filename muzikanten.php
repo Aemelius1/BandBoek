@@ -15,7 +15,7 @@ if (!isset($_SESSION['ingelogd'])) {
     <div class="container">
         <div class="column">
             <?php
-            $bandQuery = $pdo->query("SELECT * FROM advertentie WHERE isBand = 0");
+            $bandQuery = $pdo->query("SELECT * FROM advertentie WHERE isBand = 0 ORDER BY creationDate DESC");
             $advertenties = $bandQuery->fetchAll(PDO::FETCH_ASSOC);
             foreach ($advertenties as $advertentie) {
             ?>
